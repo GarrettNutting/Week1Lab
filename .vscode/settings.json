@@ -1,4 +1,6 @@
 {
     "liveServer.settings.port": 5501,
-    "liveServer.settings.host": "10.0.30.2"
+    "liveServer.settings.host": "10.0.30.2",
+    "fiveServer.host": "10.0.30.2",
+    "fiveServer.port": 3030
 }
