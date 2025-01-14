@@ -1,1 +1,10 @@
+<<<<<<< HEAD
 {}
+=======
+{
+    "liveServer.settings.port": 5501,
+    "liveServer.settings.proxy": {
+        "proxyUri": "https://liveserver.gnutting.us"
+    },
+}
+>>>>>>> c334bf680ada3a17f248a936d411a73e0ee44fe9
