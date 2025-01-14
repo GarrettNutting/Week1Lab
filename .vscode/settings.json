@@ -1,5 +1,6 @@
 {
     "liveServer.settings.port": 5501,
-    "fiveServer.host": "10.0.30.2",
-    "fiveServer.port": 3030
+    "liveServer.settings.proxy": {
+        "proxyUri": "https://liveserver.gnutting.us"
+    },
 }
