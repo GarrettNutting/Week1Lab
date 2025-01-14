@@ -1,1 +1,9 @@
-{}
+{
+    "workbench.colorTheme": "Monokai Dimmed",
+    "window.menuBarVisibility": "classic",
+    "liveServer.settings.proxy": {
+        "enable": true,
+        "baseUri": "/",
+        "proxyUri": "https://liveserver.gnutting.us"
+    }
+}
