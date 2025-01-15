@@ -9,5 +9,43 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    text-align: center;
 }
 
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.visual {
+    display: flex;
+    justify-content: center;
+    gap: 20px
+}
+
+.circle {
+    border-radius: 50%;
+    background-origin: #6c757d;
+}
+
+.circle.large {
+    width: 150px;
+    height: 150px;
+}
+
+.circle.small {
+    width: 70px;
+    height: 70px;
+}
