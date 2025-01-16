@@ -17,13 +17,13 @@ body {
     width: 90%;
     max-width: 1200px;
   }
-
+  
   .content {
     flex: 1;
     text-align: left;
     padding-right: 50px;
   }
-
+  
   .description {
     margin: 0;
     display: none;
@@ -32,7 +32,7 @@ body {
   .description:target {
     display: block;
   }
-
+  
   h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
@@ -42,12 +42,14 @@ body {
     font-size: 1.2em;
     line-height: 1.6;
   }
-
+  
   .visual {
-    flex: 0 0 300px;
-    position: relative;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }
-
+  
   .circle {
     border-radius: 50%;
     cursor: pointer;
@@ -55,34 +57,30 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: absolute;
+    outline: none;
+    border: none;
+    box-shadow: none;
   }
-
+  
   .circle.large {
     width: 200px;
     height: 200px;
-    top: 0;
-    left: 50px;
   }
-
+  
   .circle.small {
     width: 100px;
     height: 100px;
-    top: 150px;
-    left: 150px;
   }
-
-
+  
   .circle:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
   }
-
-
-  #earth-circle:target {
-    outline: 5px solid #00d4ff;
-  }
   
-  #moon-circle:target {
-    outline: 5px solid #ffcc00;
+  .circle:focus,
+  .circle:target,
+  .circle:hover {
+    outline: none;
+    border: none;
+    box-shadow: none;
   }
