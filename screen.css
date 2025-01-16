@@ -1,51 +1,81 @@
-/* Add screen styles below */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #1a1a1a;
     color: #ffffff;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
-    text-align: center;
-}
-
-.page {
-    display: none;
-}
-
-.page.active {
-    display: block;
-}
-
-h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 1.2em;
-}
-
-.visual {
+    margin-top: 50px;
+  }
+  
+  .visual {
     display: flex;
     justify-content: center;
-    gap: 20px
-}
-
-.circle {
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-direction: column;
+  }
+  
+  .circle {
     border-radius: 50%;
-    background-origin: #6c757d;
-}
-
-.circle.large {
-    width: 150px;
-    height: 150px;
-}
-
-.circle.small {
+    cursor: pointer;
+    background-image: url('images/circle.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .circle.large {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .circle.small {
     width: 70px;
     height: 70px;
-}
+  }
+  
+  .circle:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #earth-circle:target {
+    outline: 5px solid #00d4ff;
+  }
+  
+  #moon-circle:target {
+    outline: 5px solid #ffcc00;
+  }
+  
+  .description {
+    width: 60%;
+    display: none;
+  }
+  
+  .description:target {
+    display: block;
+    text-align: left;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+    text-align: left;
+  }
+  
